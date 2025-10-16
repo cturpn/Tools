@@ -9,9 +9,9 @@ It utilizes a simple .md file to save and format the tasks.
 The tasks are formatted as follows: 
 
 
-### Task <Nr>: <Title>    
- | Date:  <DateCreation> 
- | Description: <Desc>   
+### Task <Nr>: <Title>
+ | Date:  <DateCreation>
+ | Description: <Desc>
  | Deadline: <Deadline>  
 
 
