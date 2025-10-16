@@ -26,20 +26,22 @@ chmod +x ~/.local/bin/OwlTasker
 
 ## How it works
 
-Tasks are stored in a Markdown file (default location set in install.sh) with this format:
-
-\### Task \<nr>: <Title>  
-  | Date: <DateOfCreation>  
-  | Description: <CustomDesc>  
-  | Deadline: <CustomDeadline>  
+Tasks are stored in a Markdown file with this format:
+```
+### Task <nr>: <Title>
+   | Date: <DateOfCreation>  
+   | Description: <CustomDesc>  
+   | Deadline: <CustomDeadline>  
+```
+They can be created (obviously), listed and deleted. 
 
 ## Usage
-
-OwlTasker -h                 # Show help and usage  
-OwlTasker -t                 # List all tasks  
-OwlTasker -c                 # Create a new task  
-OwlTasker -d <nr>|all        # Delete a specific task or all tasks  
-
+```
+OwlTasker -h            # Show help and usage  
+OwlTasker -t				# List all tasks  
+OwlTasker -c				# Create a new task  
+OwlTasker -d <nr>|all	# Delete a specific task or all tasks  
+```
 ### Notes:  
     Task numbers (<nr>) are assigned automatically.  
     The task file path is fixed after installation; no runtime configuration is needed.  
