@@ -1,30 +1,49 @@
 # OwlTasker
-Its a very simple CLI Tasklist.
-The Goal was, to have a way to quickly write notes/tasks and be able to list them without opening a editor. 
+A very simple CLI tasklist tool.
 
-Therefore, it does just that. 
+Quickly add, view, and manage tasks without opening an editor.
+   
 
-## How does it work ?
-It utilizes a simple .md file to save and format the tasks. 
-The tasks are formatted as follows: 
+## Installation
+**This is a user-local installation (no root required) - Make sure ~/.local/bin is in your PATH**  
 
-\### Task \<nr>: <Title>  
-  |	Date: <DateOfCreation>  
-  | Description: <CustomDesc>  
-  | Deadline: <CustomDeadline>  
+### Automatically
+```bash 
+git clone https://github.com/cturpn/Tools.git
+cd Tools/OwlTasker
+bash install.sh
+```
 
+### Manually
+
+```bash
+git clone https://github.com/cturpn/Tools.git
+cd Tools/OwlTasker
+mkdir -p ~/.local/bin
+cp OwlTasker.sh ~/.local/bin/OwlTasker
+chmod +x ~/.local/bin/OwlTasker
+```
+
+## How it works
+
+Tasks are stored in a Markdown file (default location set in install.sh) with this format:
+
+\### Task \<nr>: <Title>
+  | Date: <DateOfCreation>
+  | Description: <CustomDesc>
+  | Deadline: <CustomDeadline>
 
 ## Usage
-Following Options are available: 
 
-OwlTasker -h / --help  
-  List Options and Usage  
+OwlTasker -h                 # Show help and usage
+OwlTasker -t                 # List all tasks
+OwlTasker -c                 # Create a new task
+OwlTasker -d <nr>|all        # Delete a specific task or all tasks
 
-OwlTasker -t  
-  List all tasks  
+### Notes:
 
-OwlTasker -c  
-  Create a new task  
+    Task numbers (<nr>) are assigned automatically.
 
-OwlTasker -d [ \<nr> | all ]  
-  Delete all or specified task (by assigned Nr)  
+    The task file path is fixed after installation; no runtime configuration is needed.
+
+    All commands read/write to the same Markdown file.
