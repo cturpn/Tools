@@ -8,7 +8,7 @@ Therefore, it does just that.
 It utilizes a simple .md file to save and format the tasks. 
 The tasks are formatted as follows: 
 
-\### Task \<Nr>: <Title>  
+\### Task \<nr>: <Title>  
   |	Date: <DateOfCreation>  
   | Description: <CustomDesc>  
   | Deadline: <CustomDeadline>  
@@ -17,14 +17,14 @@ The tasks are formatted as follows:
 ## Usage
 Following Options are available: 
 
-OwlTasker -h / --help
-  List Options and Usage
+OwlTasker -h / --help  
+  List Options and Usage  
 
-OwlTasker -t 
-  List all tasks
+OwlTasker -t  
+  List all tasks  
 
-OwlTasker -c
-  Create a new task
+OwlTasker -c  
+  Create a new task  
 
-OwlTasker -d [ \<Nr> | all ]
-  Delete all or specified task (by assigned Nr)
+OwlTasker -d [ \<nr> | all ]  
+  Delete all or specified task (by assigned Nr)  
