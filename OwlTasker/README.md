@@ -26,5 +26,5 @@ OwlTasker -t
 OwlTasker -c
   Create a new task
 
-OwlTasker -d [ <Nr> | all ]
+OwlTasker -d [ \<Nr> | all ]
   Delete all or specified task (by assigned Nr)
